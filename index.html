@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Todo</title>
+  </head>
+  <body>
+    <section class="todo">
+      <h2>To-do list</h2>
+      <div id="head">
+        <div id="profile">
+        <div id="profile-icon">
+         <img src="https://api.dicebear.com/9.x/lorelei/png?seed=IlyaPetrov" alt=""> 
+        </div>
+          <p id="name">Steven Gerrad</p>
+        </div>
+      
+      <div id="head2">
+      <div id="calender">Loading</div>
+      <div id="time"></div>
+      </div>
+      </div>
+      <div class="input">
+        <input
+          type="text"
+          class="input-field"
+          id="todoInput"
+          placeholder="Add a new todo"
+        />
+      </div>     
+       <div id="dateprio">
+          <input id="tododate" type="date">
+          <select id="priority" name="priority" class="input-field">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+          <option value="Urgent">Urgent</option>
+          </select>  
+      </div> 
+      <button class="btn">Add</button>
+      <ul class="scroll">
+        <li id="todoList"></li>
+        <li id="tododatelist"></li>
+      </ul>
+      <div>
+        <hr class="counter" />
+        <div class="counter-container">
+          <p><span id="todoCount">0</span> items total</p>
+          <button id="deleteButton">Delete All</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
